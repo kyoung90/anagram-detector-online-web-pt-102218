@@ -10,7 +10,7 @@ class Anagram
     anagrams = []
     possibleAnagrams.each do |possibleAnagram|
       if @word.split("").sort == possibleAnagram.split("").sort
-        anagrams << possibleAnagram
+        anagram << possibleAnagram
       end 
     end 
     anagrams
