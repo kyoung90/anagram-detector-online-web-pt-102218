@@ -7,6 +7,12 @@ class Anagram
   end 
   
   def match(possibleAnagrams)
-    
+    anagrams = []
+    possibleAnagrams.each do |possibleAnagram|
+      if @word.split("").sort == possibleAnagram.split("").sort
+        anagrams << possibleAnagram
+      end 
+    end 
+    anagrams
   end 
 end 
